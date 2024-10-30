@@ -1,4 +1,4 @@
-# **Model-X**
+# **Model-X CTRL**
 ### **BLE Model M Universal Controller**
 
 ![Model X](./Pics/Model%20X%20CTRL%20(Int.Batt.SW)_16b.png)
