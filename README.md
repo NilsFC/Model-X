@@ -10,17 +10,19 @@ By simply replacing the entire legacy electronics inside the keyboard, it is pos
 The Model X CTRL is designed to fit and be used with standard 102/103 keys, 84/85 keys IBM SSK (Space Saving Keyboard) and, with an adapter, 122 key IBM M122 (AKA Battlecruiser).
 
 Main features:
-  - Easy Plug and Play upgrade- no need to solder anything to original PCB or Cable
-  - BLE (Bluetooth Low Energy) and USB type C Connection
-  - Battery recharge via USB-C (same cable as most of the smart phones, notebooks and laptops)
-  - Low consumption: a 2000 mAh battery last for over one month without recharging or turning off
-  - Connectors accepts original keyboard Flat Flex Cable
-  - Tested with IBM Model M 139140X and IBM Model M122 Type2/3 (AKA Battleship)
-  - ZMK firmware (open source)
-  - Expandable: 2 User IOs can be used to add functions to the keyboard
-  - Based on ProMicro NRF52840 dev board (aka SuperMini) - technically the Model X is a "shield"
-  - PCB designed in KiCad (open source)
-
+  - Easy Plug and Play upgrade- no need to solder anything to original PCB or Cable;
+  - BLE (Bluetooth Low Energy) and USB type C Connection;
+  - Battery recharge via USB-C (same cable as most of the smart phones, notebooks and laptops);
+  - Low consumption: a 2000 mAh battery last for over one month without recharging or turning off;
+  - Works with IBM Model M (139140X) and IBM Model M122 Type2/3 (AKA Battleship);
+  - Works with all model M FFC variants and LED connectors;
+  - ZMK firmware (open source);
+  - Based on ProMicro NRF52840 dev board (aka SuperMini) - technically the Model X is a "shield";
+  - PCB designed in KiCad (open source);
+  - Expandable: user can connect his own LEDs and solder on board related resistors;
+  - Expandable: it is possible to easily connect an External Battery Switch (battery cut-off) and External Soft Off Button (J12/J13);
+  - Expandable: 2 User IOs are exposed togheter with supply to add functions to the keyboard (for example beam spring coil);
+  - Expandable: columns and rows matrix are exposed to 2x IDC connectors and can be routed via Model X TERM or Model X EXT122 accessories;
 
 As a completion of the Model X, there are some accessories:
   - Model X EXT122<br>  
