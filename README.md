@@ -1,60 +1,68 @@
-# Model-X
-**BLE Model M Universal Controller**
+# **Model-X**
+### **BLE Model M Universal Controller**
 
 ![Model X](./site/Model%20X%20CTRL%20(Int.Batt.SW)_16b.png)
 
-Model X is direct replacement controller for the old and good IBM Model M keyboards.<br>
-Old mechanic keyboards are coming back among enthusiasts and programmers. And they're gaining value.<br>
-Unfortunatly modern computers do not have DIN or PS2 ports anymore, so there's no simple way to connect a 40 years old hardware to our brand new Laptop.<br>
-By simply replacing the entire legacy electronics inside the keyboard, it is possible to revive a "piece of history" and even add modern function like USB connection, Wireless and remappable caracters. Old PCB can be saved for reverting to orginal condition.<br>
-The Model X CTRL is designed to fit and be used with standard 102/103 keys, 84/85 keys IBM SSK (Space Saving Keyboard) and, with an adapter, 122 key IBM M122 (AKA Battlecruiser).<br>
-Model "X" stand for Cross keyboard, since it aims to be fittable most Model M variants as possible.
-<br>
-Main features:
-  - Easy Plug and Play upgrade- no need to solder anything to original PCB or Cable;
-  - BLE (Bluetooth Low Energy) and USB type C Connection;
-  - Battery recharge via USB-C (same cable as most of the smart phones, notebooks and laptops);
-  - Low consumption: a 2000 mAh battery last for over one month without recharging or turning off;
-  - Works with IBM Model M (139140X) and IBM Model M122 Type2/3 (AKA Battleship);
-  - Works with all model M FFC variants and LED connectors;
-  - ZMK firmware (open source);
-  - Software remappable keys thanks to ZMK Studio User Interface;
-  - Based on ProMicro NRF52840 dev board (aka SuperMini) - technically the Model X is a "shield";
-  - PCB designed in KiCad (open source);
-  - Expandable: user can connect his own LEDs and solder on board related resistors;
-  - Expandable: it is possible to easily connect an External Battery Switch (battery cut-off) and External Soft Off Button (J12/J13);
-  - Expandable: 2 User IOs are exposed togheter with supply to add functions to the keyboard (for example beam spring coil);
-  - Expandable: columns and rows matrix are exposed to 2x IDC connectors and can be routed via Model X TERM or Model X EXT122 accessories;
-<br>
-<br>
-As a completion of the Model X, there are some accessories:<br>
+Model X is a direct replacement controller for the classic IBM Model M keyboards.<br>
+Old mechanical keyboards are making a comeback among enthusiasts and programmers and gaining value.<br>
+Unfortunately, modern computers no longer have DIN or PS2 ports, so there’s no simple way to connect a 40-year-old hardware to a brand-new laptop.<br>
+By replacing the legacy electronics inside the keyboard, it’s possible to revive a “piece of history” and even add modern functions like USB connectivity, wireless support, and remappable characters. The original PCB can be preserved to revert the keyboard to its original state.<br>
+The Model X CTRL is designed to fit and work with standard 102/103 keys, 84/85 keys IBM SSK (Space Saving Keyboard), and, with an adapter, the 122-key IBM M122 (AKA Battlecruiser).<br>
+The "X" in Model X stands for "Cross keyboard," as it aims to be compatible with most Model M variants.
 
-  - **Model X EXT122**<br>
-  <img src="./site/Model%20X%20EXT122%20(J7%202x07)_16b.png" alt="Model X EXT122" width="600">
-  This accessory is designed to connect the "Model X CTRL" to Model M 122 Flat FFCs, since the original IBM controller is placed in a different position than the standard Model M.
-  <br>
+---
 
-  - **Model X LED**<br>  
-  <img src="./site/Model%20X%20LED_16b.png" alt="Model X LED" width="200">
-  This accessory replaces the original LED unit from IBM. On this board are soldered 3x 5mm High-Intensity LEDs that draw less current, with same brigthness than the original ones, making the battery last even longer.
-  LEDs colour can be chosen and to fit all different Model M variants, it can be equipped with FFC or JST connectors, with or without Resistors.
+### **Main Features**
+  - **Plug-and-Play Upgrade**: No soldering required to connect to the original PCB or cable.
+  - **BLE (Bluetooth Low Energy)** and **USB Type-C Connection**
+  - **USB-C Charging** (same cable as most smartphones, notebooks, and laptops)
+  - **Low Power Consumption**: A 2000 mAh battery lasts over a month without recharging or turning off.
+  - **Compatibility**: Works with IBM Model M (139140X) and IBM Model M122 Type 2/3 (AKA Battleship).
+  - **Broad Support**: Compatible with all Model M FFC variants and LED connectors.
+  - **ZMK Firmware** (open source)
+  - **Software Remappable Keys** via ZMK Studio User Interface
+  - **Hardware Platform**: Based on the ProMicro NRF52840 dev board (aka SuperMini); Model X is a "shield".
+  - **Designed in KiCad** (open source)
+  - **Expandable**: User-connectable LEDs and solderable on-board resistors.
+  - **Battery Control**: Easily connect an external battery switch (battery cut-off) and an external soft-off button (J12/J13).
+  - **Additional I/O**: 2 user I/O lines exposed with supply for added functionality (e.g., beam spring coil).
+  - **Matrix Connections**: Rows and columns matrix are exposed via two 2x IDC connectors, usable with Model X TERM or Model X EXT122 accessories.
 
-  - **Model X TERM**<br>  
-  <img src="./site/Model%20X%20TERM_16b.png" alt="Model X TERM" width="200">
-  This was the initial design of a remote terminal board in order to fit all possible position of the controller in respect of the keyboard 2x flat flexible cables (FFC).
-  Actually it's more for DIY and experimentation, since it requires the user to build some sort of "bracheting" but gives more flexibility.
-<br>
-<br>
-<br>
-The project is planned to be release as Open source hardware
-<br>
-<br>
-<br>
-**Inspiration and ideas**<br>
-<br>
-This project have been inspired by John Hawthorn to whom all my gratitude goes, whose Model H project taught me a lot (https://modelh.club/)
-<br><br>
-**Other usefull links**<br>
-Bitten's Model M Restoration Megaguide<br>
-https://photos.google.com/share/AF1QipOkRh4Wn0OBdTQppsHGt_hizKJ_D73hiwTTOsZsvn9ZJFifN0-klXLtLuJNfa2Axg?pli=1&key=OENXSXY5NVk3alZDZ0dCcEMxR05kZHZtaFBqanN3
-<br>
+---
+
+### **Accessories**
+
+#### **Model X EXT122**  
+<img src="./site/Model%20X%20EXT122%20(J7%202x07)_16b.png" alt="Model X EXT122" width="600">
+
+This accessory connects the Model X CTRL to Model M 122 Flat FFCs, accommodating the different controller placement in the standard Model M.
+
+---
+
+#### **Model X LED**  
+<img src="./site/Model%20X%20LED_16b.png" alt="Model X LED" width="200">
+
+This accessory replaces the original IBM LED unit with 3 high-intensity 5mm LEDs that consume less power, extending battery life without compromising brightness. LEDs are customizable in color, with optional FFC or JST connectors, and can be equipped with or without resistors.
+
+---
+
+#### **Model X TERM**  
+<img src="./site/Model%20X%20TERM_16b.png" alt="Model X TERM" width="200">
+
+Originally designed as a remote terminal board to fit various controller positions relative to the keyboard's FFC cables, this accessory is great for DIY enthusiasts, offering flexibility for custom projects.
+
+---
+
+### **Open Source**
+The project is planned to be released as open-source hardware.
+
+---
+
+### **Inspiration and Resources**
+
+- **John Hawthorn**
+The fantastic Model H project of this guy, to whom I am very grateful, teached me really a lot. Check out his work here: [Model H Project](https://modelh.club/)
+
+#### Other useful links:
+- **Bitten's Model M Restoration Megaguide**  
+  [View Guide](https://photos.google.com/share/AF1QipOkRh4Wn0OBdTQppsHGt_hizKJ_D73hiwTTOsZsvn9ZJFifN0-klXLtLuJNfa2Axg?pli=1&key=OENXSXY5NVk3alZDZ0dCcEMxR05kZHZtaFBqanN3)
