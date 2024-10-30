@@ -24,7 +24,7 @@ Main features:
 As a completion of the Model X, there are some accessories:
   - Model X EXT122
   
-  <img src="./site/Model%20X%20EXT122%20(J7%202x07)_16b.png" alt="Model X EXT122" width="400">
+  <img src="./site/Model%20X%20EXT122%20(J7%202x07)_16b.png" alt="Model X EXT122" width="600">
 
   - Model X LED
   
