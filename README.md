@@ -50,9 +50,11 @@ The project is planned to be release as Open source hardware
 <br>
 <br>
 <br>
-Inspiration and ideas:
+**Inspiration and ideas**<br>
+<br>
 This project have been inspired by John Hawthorn to whom all my gratitude goes, whose Model H project taught me a lot (https://modelh.club/)
-
-Other usefull links.
-Bitten's Model M Restoration Megaguide
+<br><br>
+**Other usefull links**<br>
+Bitten's Model M Restoration Megaguide<br>
 https://photos.google.com/share/AF1QipOkRh4Wn0OBdTQppsHGt_hizKJ_D73hiwTTOsZsvn9ZJFifN0-klXLtLuJNfa2Axg?pli=1&key=OENXSXY5NVk3alZDZ0dCcEMxR05kZHZtaFBqanN3
+<br>
