@@ -60,7 +60,7 @@ The project is planned to be released as open-source hardware.
 
 ### **Inspiration and Resources**
 
-- **John Hawthorn**
+- **John Hawthorn**  
 The fantastic Model H project of this guy, to whom I am very grateful, teached me really a lot. Check out his work here: [Model H Project](https://modelh.club/)
 
 #### Other useful links:
