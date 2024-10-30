@@ -61,7 +61,9 @@ The project is planned to be released as open-source hardware.
 ### **Inspiration and Resources**
 
 - **John Hawthorn**  
-The fantastic Model H project of this guy, to whom I am very grateful, teached me really a lot. Check out his work here: [Model H Project](https://modelh.club/)
+Check out the fantastic work of this guy to whom I am very grateful. Thanks to his Open Source project I really learned a lot.  [Model H Project](https://modelh.club/)  
+- **ZMK Firmware**  
+Incredible work of this group. If you're a Keyboard and DIY enthusiast, surely this needs no presentation: [https://zmk.dev/](https://zmk.dev/)  
 
 #### Other useful links:
 - **Bitten's Model M Restoration Megaguide**  
