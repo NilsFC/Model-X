@@ -1,6 +1,8 @@
 # Model-X
 BLE Model M Universal Controller
 
+![Testo alternativo](./site/Model%20X%20CTRL%20(Int.Batt.SW)_16b.png)
+
 Model X is direct replacement controller for the old and good IBM Model M keyboards.
 Old mechanic keyboards are coming back among enthusiasts and programmers. And they're gaining value.
 Unfortunatly modern computers do not have DIN or PS2 ports anymore, so there's no simple way to connect a 40 years old hardware to our brand new Laptop.
