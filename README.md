@@ -1,7 +1,7 @@
 # Model-X
 BLE Model M Universal Controller
 
-![Testo alternativo](./site/Model%20X%20CTRL%20(Int.Batt.SW)_16b.png)
+![Model X](./site/Model%20X%20CTRL%20(Int.Batt.SW)_16b.png)
 
 Model X is direct replacement controller for the old and good IBM Model M keyboards.
 Old mechanic keyboards are coming back among enthusiasts and programmers. And they're gaining value.
@@ -16,11 +16,23 @@ Main features:
   - Low consumption: a 2000 mAh battery last for over one month without recharging or turning off
   - Connectors accepts original keyboard Flat Flex Cable
   - Tested with IBM Model M 139140X and IBM Model M122 Type2/3 (AKA Battleship)
-  - ZMK firmware
-  - Open source hardware
+  - ZMK firmware (open source)
   - Expandable: 2 User IOs can be used to add functions to the keyboard
-  - Based on a ProMicro NRF52840 development board, which in turn is based on the Nordic Semiconductor nRF52840 SoC
-  - PCB designed KiCad
+  - Based on ProMicro NRF52840 dev board (aka SuperMini) - technically the Model X is a "shield"
+  - PCB designed in KiCad (open source)
+
+As a completion of the Model X, there are some accessories:
+  - Model X EXT122
+  
+  <img src="./site/Model%20X%20EXT122%20(J7%202x07)_16b.png" alt="Model X EXT122" width="200">
+
+  - Model X LED
+  
+  <img src="Model%20X%20LED_16b.png" alt="Model X LED" width="200">
+
+
+
+The project is planned to be release as Open source hardware
 
 
 Inspiration and ideas:
