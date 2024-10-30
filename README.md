@@ -12,13 +12,13 @@ Main features:
   - BLE (Bluetooth Low Energy) and USB type C Connection
   - Battery recharge via USB-C (same cable as most of the smart phones, notebooks and laptops)
   - Low consumption: a 2000 mAh battery last for over one month without recharging or turning off
-  - Connectors accepts original kayboard Flat Flex Cable
+  - Connectors accepts original keyboard Flat Flex Cable
   - Tested with IBM Model M 139140X and IBM Model M122 Type2/3 (AKA Battleship)
   - ZMK firmware
   - Open source hardware
   - Expandable: 2 User IOs can be used to add functions to the keyboard
   - Based on a ProMicro NRF52840 development board, which in turn is based on the Nordic Semiconductor nRF52840 SoC
-  - PCB have been designed KiCad
+  - PCB designed KiCad
 
 
 Inspiration and ideas:
