@@ -1,0 +1,8 @@
+file_format: "1"
+id: model_x
+name: model_x
+type: shield
+url: https://github.com/NilsFC/zmk-config/
+requires: [nice_nano_v2]
+features:
+  - keys
