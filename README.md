@@ -1,5 +1,6 @@
 # **Model-X CTRL**
 ### **BLE Model M Universal Controller**
+Project wiki: https://github.com/NilsFC/Model-X/wiki
 
 ![Model X](./Pics/Model%20X%20CTRL%20(Int.Batt.SW)_16b.png)
 
