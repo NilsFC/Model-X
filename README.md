@@ -2,7 +2,7 @@
 ### **BLE Model M Universal Controller**
 Project wiki: https://github.com/NilsFC/Model-X/wiki
 
-![Model X](./Pics/Model%20X%20CTRL%20(Int.Batt.SW)_16b.png)
+![Model X](./Pics/Resources/Model%20X%20CTRL%20(Int.Batt.SW)_16b.png)
 
 Model X is a direct replacement controller for the classic IBM Model M keyboards.<br>
 Old mechanical keyboards are making a comeback among enthusiasts and programmers and gaining value.<br>
@@ -34,21 +34,21 @@ The "X" in Model X stands for "Cross keyboard," as it aims to be compatible with
 ### **Accessories**
 
 #### **Model X EXT122**  
-<img src="./Pics/Model%20X%20EXT122%20(J7%202x07)_16b.png" alt="Model X EXT122" width="600">
+<img src="./Pics/Resources/Model%20X%20EXT122%20(J7%202x07)_16b.png" alt="Model X EXT122" width="600">
 
 This accessory connects the Model X CTRL to Model M 122 Flat FFCs, accommodating the different controller placement in the standard Model M.
 
 ---
 
 #### **Model X LED**  
-<img src="./Pics/Model%20X%20LED_16b.png" alt="Model X LED" width="200">
+<img src="./Pics/Resources/Model%20X%20LED_16b.png" alt="Model X LED" width="200">
 
 This accessory replaces the original IBM LED unit with 3 high-intensity 5mm LEDs that consume less power, extending battery life without compromising brightness. LEDs are customizable in color, with optional FFC or JST connectors, and can be equipped with or without resistors.
 
 ---
 
 #### **Model X TERM**  
-<img src="./Pics/Model%20X%20TERM_16b.png" alt="Model X TERM" width="200">
+<img src="./Pics/Resources/Model%20X%20TERM_16b.png" alt="Model X TERM" width="200">
 
 Originally designed as a remote terminal board to fit various controller positions relative to the keyboard's FFC cables, this accessory is great for DIY enthusiasts, offering flexibility for custom projects.
 
