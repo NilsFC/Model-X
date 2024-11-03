@@ -1,0 +1,9 @@
+Releases < V09
+Test versions;
+
+zmk-Model_X_v09.uf2 (20241102)
+Multiple layout (ANSI101 / ISO102 / ISO122);
+
+zmk-Model_X_v10.uf2 (20241103)
+Eliminated unnecessary kscanners;
+Soft-Off pin was occupied by mistake by a column pin in M122 kscan;
