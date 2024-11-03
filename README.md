@@ -8,7 +8,7 @@ Model X is a direct replacement controller for the classic IBM Model M keyboards
 Old mechanical keyboards are making a comeback among enthusiasts and programmers and gaining value.<br>
 Unfortunately, modern computers no longer have DIN or PS2 ports, so there’s no simple way to connect a 40-year-old hardware to a brand-new laptop.<br>
 By replacing the legacy electronics inside the keyboard, it’s possible to revive a “piece of history” and even add modern functions like USB connectivity, wireless support, and remappable characters. The original PCB can be preserved to revert the keyboard to its original state.<br>
-The Model X CTRL is designed to fit and work with standard 102/103 keys, 84/85 keys IBM SSK (Space Saving Keyboard), and, with an adapter, the 122-key IBM M122 (AKA Battlecruiser).<br>
+The Model X CTRL is designed to fit and work with standard 101/102 keys, 84/85 keys IBM SSK (Space Saving Keyboard), and, with an adapter, the 122-key IBM M122 (AKA Battlecruiser).<br>
 The "X" in Model X stands for "Cross keyboard," as it aims to be compatible with most Model M variants.
 
 ---
