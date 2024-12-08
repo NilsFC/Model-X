@@ -34,7 +34,7 @@ The "X" in Model X stands for "Cross keyboard," as it aims to be compatible with
 ### **Installation**
 #### **IBM Model M122 retrofit**  
 
-[![IBM Model M122 retrofit](https://img.youtube.com/vi/8x1GVP27KWM/0.jpg)](https://www.youtube.com/watch?v=8x1GVP27KWM)
+[![IBM Model M122 retrofit](https://img.youtube.com/vi/N0QGWPXJK3Q/0.jpg)](https://www.youtube.com/watch?v=N0QGWPXJK3Q)
 
 ---
 
