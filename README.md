@@ -31,6 +31,11 @@ The "X" in Model X stands for "Cross keyboard," as it aims to be compatible with
 
 ---
 
+### **Installation**
+[Model M122 Video](Pics/Model%20M122/Model%20X%20Ctrl%20in%20Model%20M122.mp4?raw=true)
+
+---
+
 ### **Accessories**
 
 #### **Model X EXT122**  
