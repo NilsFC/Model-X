@@ -35,8 +35,8 @@ The "X" in Model X stands for "Cross keyboard," as it aims to be compatible with
 [Model M122 Video](Pics/Model%20M122/Model%20X%20Ctrl%20in%20Model%20M122.mp4?raw=true)
 #### **IBM Model M122 retrofit**  
 <video controls width="640">
-  <source src="Pics/Model%20M122/Model%20X%20Ctrl%20in%20Model%20M122.mp4" type="video/mp4">
-  Your browser do not support HTML5 videos.
+  <source src="Pics/Model_M122/Model_X_Ctrl_in_Model_M122.mp4?raw=true" type="video/mp4">
+  Il tuo browser non supporta i video HTML5.
 </video>
 
 ---
