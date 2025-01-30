@@ -1,0 +1,71 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+//#undef ZMK_BEHAVIORS_KEEP_ALL
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/ext_power.h>
+
+#define DEFAULT 0
+#define BT      1
+
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+
+        // ANSI
+         default_layer101 {
+        // ------------------------------------------------------------------------------------------
+        //      |ESC      |F1       |F2       |F3       |F4       |F5       |F6       |F7       |F8       |F9       |F10      |F11      |F12                          |PrtSCR   |SLCK     |BREAK    
+        //      |`        |1        |2        |3        |4        |5        |6        |7        |8        |9        |0        |-        |=        |BKSP               |INSERT   |HOME     |PAGE_UP            |BL_NUM   |KP_SLASH |STAR     |KP_MINUS |
+        //      |TAB      |Q        |W        |E        |R        |T        |Y        |U        |I        |O        |P        |[        |]        | "|"               |DELETE   |END      |PAGE_DW            |KP_N7    |KP_N8    |KP_N9    |KP_PLUS  |
+        //      |CAPS     |A        |S        |D        |F        |G        |H        |J        |K        |L        |;        |'        |          ENTER                                                      |KP_N4    |KP_N5    |KP_N6    |
+        //      |SHIFT    |         |Z        |X        |C        |V        |B        |N        |M        |,        |.        |/        |SHIFT                                  |UP                           |KP_N1    |KP_N2    |KP_N3    |RET      |
+        //      |CTL      |ALT      | SPACE                                                                                   |ALT      |CTL                          |LEFT     |DOWN     |RIGHT              |KP_N0    |KP_DOT   |
+        // ------------------------------------------------------------------------------------------
+            bindings = <
+                &kp ESC   &kp F1        &kp F2   &kp F3    &kp F4    &kp F5    &kp F6    &kp F7    &kp F8    &kp F9    &kp F10   &kp F11 &kp F12      &kp PSCRN   &kp SLCK   &lt BT PAUSE_BREAK
+                &kp GRAVE &kp N1        &kp N2   &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS &kp EQUAL      &kp BSPC            &kp INS     &kp HOME   &kp PAGE_UP           &kp KP_NUMLOCK &kp KP_SLASH   &kp KP_ASTERISK  &kp KP_MINUS
+                &kp TAB   &kp Q         &kp W    &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp LBKT  &kp RBKT       &kp BSLH            &kp DELETE  &kp END    &kp PAGE_DOWN         &kp KP_N7      &kp KP_N8      &kp KP_N9        &kp KP_PLUS
+                &kp CLCK  &kp A         &kp S    &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI &kp SQT                &kp RET                                                          &kp KP_N4      &kp KP_N5      &kp KP_N6
+                &kp LSHFT               &kp Z    &kp X    &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT      &kp FSLH      &kp RSHFT                       &kp UP                           &kp KP_N1      &kp KP_N2      &kp KP_N3        &kp RET
+                &kp LCTRL &kp LALT             &kp SPACE                                                         &kp RALT         &kp RCTRL           &kp LEFT    &kp DOWN   &kp RIGHT             &kp KP_N0                     &kp KP_DOT                              
+            >;
+        };
+
+        bt_layer {
+        // ------------------------------------------------------------------------------------------
+        // |BT_CLR_ALL|        |         |         |F4       |RESET    |BOOTLDR  |F7       |F8       |F9       |F10      |ExtPwOff |ExtPwrOn                     |PrtSCR   |SLCK     |BREAK    
+        // |         |         |         |         |4        |5        |6        |7        |8        |9        |0        |-        |=        |BKSP               |INSERT   |HOME     |PAGE_UP            |BL_NUM   |KP_SLASH |STAR     |KP_MINUS |
+        // |         |         |         |         |R        |T        |Y        |U        |I        |O        |P        |[        |]        |                   |DELETE   |END      |PAGE_DW            |KP_N7    |KP_N8    |KP_N9    |KP_PLUS  |
+        // |         |         |         |         |F        |G        |H        |J        |K        |L        |;        |'        |ù        |ENTER                                  |KP_N4              |KP_N5    |KP_N6    |
+        // |         |         |         |         |C        |V        |B        |N        |M        |,        |.        |/        |SHIFT                                  |UP                           |KP_N1    |KP_N2    |KP_N3    |RET      |
+        // |         |         |                                                                                         |ALT      |CTL                          |LEFT     |DOWN     |RIGHT              |KP_N0    |KP_DOT   |
+        // ------------------------------------------------------------------------------------------
+            bindings = <
+                &bt BT_CLR_ALL &trans &trans &trans &trans &sys_reset &bootloader &trans &trans &trans &trans &ext_power EP_OFF &ext_power EP_ON    &trans &trans &trans
+                &trans         &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans     &trans                       &trans &trans &trans        &trans &trans &trans &trans
+                &trans         &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans     &trans                       &trans &trans &trans        &trans &trans &trans &trans
+                &trans         &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans            &trans                                                   &trans &trans &trans 
+                &trans                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans                                         &trans               &trans &trans &trans &trans
+                &trans         &trans &trans                                                         &trans &trans                                  &trans &trans &trans        &trans &trans
+            >;
+        };
+        
+        extra1 {
+            status = "reserved";
+        };
+
+        extra2 {
+            status = "reserved";
+        };
+    };
+};

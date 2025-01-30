@@ -7,3 +7,8 @@ Multiple layout (ANSI101 / ISO102 / ISO122);
 zmk-Model_X_v10.uf2 (20241103)
 Eliminated unnecessary kscanners;
 Soft-Off pin was occupied by mistake by a column pin in M122 kscan;
+
+ZMK-Model_X_v12.ufs (20250130)
+Added SSK 84 Keys ANSI Layout;
+Compiled without USB-Logging snippet, to avoid to see 2 USBs when opening ZMK Studio;
+
