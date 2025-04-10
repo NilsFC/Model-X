@@ -15,8 +15,6 @@ The "X" in Model X stands for "Cross keyboard," as it aims to be compatible with
 
 ---
 
-v
-
 ### **Main Features**
 
 - **Plug-and-Play Upgrade**: No soldering required to connect to the original PCB or cable.
@@ -38,8 +36,13 @@ v
 
 ### **Installation**
 
-#### **IBM Model M122 retrofit**
+#### **IBM Model M retrofit**
 
+#### **IBM Model M retrofit (101/102 keys)**  
+[![IBM Model M122 retrofit](https://img.youtube.com/vi/JZ2OXhT8EQA/0.jpg)](https://www.youtube.com/watch?v=JZ2OXhT8EQA)
+<br>
+
+#### **IBM Model M122 retrofit (122 keys)**  
 [![IBM Model M122 retrofit](https://img.youtube.com/vi/N0QGWPXJK3Q/0.jpg)](https://www.youtube.com/watch?v=N0QGWPXJK3Q)
 
 ---
