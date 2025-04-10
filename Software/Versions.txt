@@ -12,3 +12,5 @@ ZMK-Model_X_v12.ufs (20250130)
 Added SSK 84 Keys ANSI Layout;
 Compiled without USB-Logging snippet, to avoid to see 2 USBs when opening ZMK Studio;
 
+ZMK-Model_X_v20.ufs (20250410)
+Added SSK 85 Keys ISO Layout;
