@@ -1,0 +1,149 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/ext_power.h>
+
+#define DEFAULT 0
+#define BT      1
+#define SSK_KEYPAD 2
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+
+        default_layer {
+        //                          -------------------------------------------------------------------------------------------------
+        //                          | PF13  | PF14  | PF15  | PF16  | PF17  | PF18  | PF19  | PF20  | PF21  | PF22  | PF23  | PF24  |
+        //                          | PF1   | PF2   | PF3   | PF4   | PF5   | PF6   | PF7   | PF8   | PF9   | PF10  | PF11  | PF12  |
+        //  -------------------------------------------------------------------------------------------------------------------------------------------------
+        //  | Attn  | Clear |       |  `    |  1    |  2    |  3    |  4    |  5    |  6    |  7    |  8    |  9    |  0    |  -    |  =    |   BKSP        |       |INSERT | HOME  |PAGE_UP|           | BL_NUM     | KP_SLASH   | STAR       | KP_MINUS   |
+        //  | Blank | ErImp |       |    TAB    |  Q    |  W    |  E    |  R    |  T    |  Y    |  U    |  I    |  O    |  P    |   [   |   ]   |           |       |DELETE | END   |PAGE_DW            | KP_N7      | KP_N8      | KP_N9      | KP_PLUS    |
+        //  | ExSel | ErEOF |       | CAPS        |   A   |   S   |   D   |   F   |   G   |   H   |   J   |   K   |   L   |   ;   |   '   | Iso \ |  ENTER  |               |  UP   |                   | KP N4      | KP N5      | KP N6      | M122 -     |
+        //  | Print |  Test |       | LSHIFT  |   <>  |   Z   |   X   |   C   |   V   |   B   |   N   |   M   |   ,   |   .   |   /   |        RSHIFT       |       | LEFT  | Blank | RIGHT |           | KP N1      | KP N2      | KP N3      | K ENT      |
+        //  |  ??   |  ??   |       |   Reset   |       |    ALT    |                        SPACE                          |    ALT    |       |   Enter   |               | DOWN  |                   |     KP 0                | KP .       |            |
+        //  -------------------------------------------------------------------------------------------------------------------------------------------------
+            bindings = <
+        //                          -------------------------------------------------------------------------------------------------
+        //                          | PF13  | PF14  | PF15  | PF16  | PF17  | PF18  | PF19  | PF20  | PF21  | PF22  | PF23  | PF24  |
+                                   &kp ESC  &none   &none   &none   &none   &none   &none   &none   &none  &kp PSCRN &kp SLCK &lt BT PAUSE_BREAK
+
+        //                          | PF1   | PF2   | PF3   | PF4   | PF5   | PF6   | PF7   | PF8   | PF9   | PF10  | PF11  | PF12  |
+                                     &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10 &kp F11 &kp F12 
+
+        //  -------------------------------------------------------------------------------------------------------------------------------------------------
+        //  | Attn  | Clear |       |  `    |  1    |  2    |  3    |  4    |  5    |  6    |  7    |  8    |  9    |  0    |  -    |  =    |   BKSP        |       |INSERT | HOME  |PAGE_UP|           | BL_NUM     | KP_SLASH   | STAR       | KP_MINUS   |
+              &none  &none         &kp GRAVE &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9 &kp N0 &kp MINUS &kp EQUAL   &kp BSPC          &kp INS  &kp HOME &kp PAGE_UP    &kp KP_NUMLOCK &kp KP_SLASH &kp KP_ASTERISK &kp KP_MINUS
+
+        //  | Blank | ErImp |       |    TAB    |  Q    |  W    |  E    |  R    |  T    |  Y    |  U    |  I    |  O    |  P    |   [   |   ]   |           |       |DELETE | END   |PAGE_DW            | KP_N7      | KP_N8      | KP_N9      | KP_PLUS    |
+              &none  &none            &kp TAB   &kp Q     &kp W   &kp E  &kp R   &kp T   &kp Y   &kp U   &kp I   &kp O   &kp P  &kp LBKT &kp RBKT                   &kp DEL  &kp END &kp PG_DN           &kp KP_N7    &kp KP_N8    &kp KP_N9   &kp KP_PLUS
+
+        //  | ExSel | ErEOF |       | CAPS        |   A   |   S   |   D   |   F   |   G   |   H   |   J   |   K   |   L   |   ;   |   '   | Iso \ |  ENTER  |               |  UP   |                   | KP N4      | KP N5      | KP N6      | M122 -     |
+              &none  &none             &kp CLCK    &kp A   &kp S   &kp D   &kp F   &kp G   &kp H   &kp J   &kp K   &kp L  &kp SEMI &kp SQT &kp BSLH  &kp RET                 &kp UP                      &kp KP_N4    &kp KP_N5    &kp KP_N6    &kp KP_MINUS
+
+        //  | Print |  Test |       | LSHIFT  |   <>  |   Z   |   X   |   C   |   V   |   B   |   N   |   M   |   ,   |   .   |   /   |        RSHIFT       |       | LEFT  | Blank | RIGHT |           | KP N1      | KP N2      | KP N3      | K ENT      |
+              &none  &none        &kp LSHFT &mt LGUI NUBS &kp Z &kp X   &kp C  &kp V   &kp B   &kp N   &kp M  &kp COMMA &kp DOT &kp FSLH     &kp RSHFT              &kp LEFT  &none  &kp RIGHT           &kp KP_N1    &kp KP_N2    &kp KP_N3    &kp KP_ENTER
+
+        //  |  ??   |  ??   |       |   Reset   |       |    ALT    |                        SPACE                          |    ALT    |       |   Enter   |               | DOWN  |                   |     KP 0                | KP .       |            |
+              &none  &none           &kp LCTRL            &kp LALT                        &kp SPACE                            &kp RALT          &kp RCTRL                  &kp DOWN                     &kp KP_N0                 &kp KP_DOT                              
+        //  -------------------------------------------------------------------------------------------------------------------------------------------------
+            >;
+        };
+
+
+        bt_layer {
+        //                          -------------------------------------------------------------------------------------------------
+        //                          | PF13  | PF14  | PF15  | PF16  | PF17  | PF18  | PF19  | PF20  | PF21  | PF22  | PF23  | PF24  |
+        //                          | PF1   | PF2   | PF3   | PF4   | PF5   | PF6   | PF7   | PF8   | PF9   | PF10  | PF11  | PF12  |
+        //  -------------------------------------------------------------------------------------------------------------------------------------------------
+        //  | Attn  | Clear |       |  `    |  1    |  2    |  3    |  4    |  5    |  6    |  7    |  8    |  9    |  0    |  -    |  =    |   BKSP        |       |INSERT | HOME  |PAGE_UP|           | BL_NUM     | KP_SLASH   | STAR       | KP_MINUS   |
+        //  | Blank | ErImp |       |    TAB    |  Q    |  W    |  E    |  R    |  T    |  Y    |  U    |  I    |  O    |  P    |   [   |   ]   |           |       |DELETE | END   |PAGE_DW            | KP_N7      | KP_N8      | KP_N9      | KP_PLUS    |
+        //  | ExSel | ErEOF |       | CAPS        |   A   |   S   |   D   |   F   |   G   |   H   |   J   |   K   |   L   |   ;   |   '   | Iso \ |  ENTER  |               |  UP   |                   | KP N4      | KP N5      | KP N6      | M122 -     |
+        //  | Print |  Test |       | LSHIFT  |   <>  |   Z   |   X   |   C   |   V   |   B   |   N   |   M   |   ,   |   .   |   /   |        RSHIFT       |       | LEFT  | Blank | RIGHT |           | KP N1      | KP N2      | KP N3      | K ENT      |
+        //  |  ??   |  ??   |       |   Reset   |       |    ALT    |                        SPACE                          |    ALT    |       |   Enter   |               | DOWN  |                   |     KP 0                | KP .       |            |
+        //  -------------------------------------------------------------------------------------------------------------------------------------------------
+            bindings = <
+        //                          -------------------------------------------------------------------------------------------------
+        //                          | PF13  | PF14  | PF15  | PF16  | PF17  | PF18  | PF19  | PF20  | PF21  | PF22  | PF23  | PF24  |
+                                     &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+    
+        //                          | PF1   | PF2   | PF3   | PF4   | PF5   | PF6   | PF7   | PF8   | PF9   | PF10  | PF11  | PF12  |
+                              &bt BT_CLR_ALL &none   &none  &none &sys_reset &bootloader &none &none &none &none &ext_power EP_OFF &ext_power EP_ON   
+    
+        //  -------------------------------------------------------------------------------------------------------------------------------------------------
+        //  | Attn  | Clear |       |  `    |  1    |  2    |  3    |  4    |  5    |  6    |  7    |  8    |  9    |  0    |  -    |  =    |   BKSP        |       |INSERT | HOME  |PAGE_UP|           | BL_NUM     | KP_SLASH   | STAR       | KP_MINUS   |
+             &none   &none           &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none                   &none    &none  &none               &none        &none        &none        &none
+    
+        //  | Blank | ErImp |       |    TAB    |  Q    |  W    |  E    |  R    |  T    |  Y    |  U    |  I    |  O    |  P    |   [   |   ]   |           |       |DELETE | END   |PAGE_DW            | KP_N7      | KP_N8      | KP_N9      | KP_PLUS    |
+             &none  &none            &none       &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none                       &none    &none  &none               &none        &none        &none        &none
+    
+        //  | ExSel | ErEOF |       | CAPS        |   A   |   S   |   D   |   F   |   G   |   H   |   J   |   K   |   L   |   ;   |   '   | Iso \ |  ENTER  |               |  UP   |                   | KP N4      | KP N5      | KP N6      | M122 -     |
+             &none  &none            &none         &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none                     &none                       &none        &none        &none        &none
+    
+        //  | Print |  Test |       | LSHIFT  |   <>  |   Z   |   X   |   C   |   V   |   B   |   N   |   M   |   ,   |   .   |   /   |        RSHIFT       |       | LEFT  | Blank | RIGHT |           | KP N1      | KP N2      | KP N3      | K ENT      |
+             &none   &none           &none     &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none       &none                     &none   &none   &none               &none        &none        &none        &none
+    
+        //  |  ??   |  ??   |       |   Reset   |       |    ALT    |                        SPACE                          |    ALT    |       |   Enter   |               | DOWN  |                   |     KP 0                | KP .       |            |
+             &none  &none            &none                 &none                             &none                              &none               &none                     &none                      &none                     &none                                
+        //  -------------------------------------------------------------------------------------------------------------------------------------------------
+            >;
+        };
+
+        ssk_keypad_layer {
+        //                          -------------------------------------------------------------------------------------------------
+        //                          | PF13  | PF14  | PF15  | PF16  | PF17  | PF18  | PF19  | PF20  | PF21  | PF22  | PF23  | PF24  |
+        //                          | PF1   | PF2   | PF3   | PF4   | PF5   | PF6   | PF7   | PF8   | PF9   | PF10  | PF11  | PF12  |
+        //  -------------------------------------------------------------------------------------------------------------------------------------------------
+        //  | Attn  | Clear |       |  `    |  1    |  2    |  3    |  4    |  5    |  6    |  7    |  8    |  9    |  0    |  -    |  =    |   BKSP        |       |INSERT | HOME  |PAGE_UP|           | BL_NUM     | KP_SLASH   | STAR       | KP_MINUS   |
+        //  | Blank | ErImp |       |    TAB    |  Q    |  W    |  E    |  R    |  T    |  Y    |  U    |  I    |  O    |  P    |   [   |   ]   |           |       |DELETE | END   |PAGE_DW            | KP_N7      | KP_N8      | KP_N9      | KP_PLUS    |
+        //  | ExSel | ErEOF |       | CAPS        |   A   |   S   |   D   |   F   |   G   |   H   |   J   |   K   |   L   |   ;   |   '   | Iso \ |  ENTER  |               |  UP   |                   | KP N4      | KP N5      | KP N6      | M122 -     |
+        //  | Print |  Test |       | LSHIFT  |   <>  |   Z   |   X   |   C   |   V   |   B   |   N   |   M   |   ,   |   .   |   /   |        RSHIFT       |       | LEFT  | Blank | RIGHT |           | KP N1      | KP N2      | KP N3      | K ENT      |
+        //  |  ??   |  ??   |       |   Reset   |       |    ALT    |                        SPACE                          |    ALT    |       |   Enter   |               | DOWN  |                   |     KP 0                | KP .       |            |
+        //  -------------------------------------------------------------------------------------------------------------------------------------------------
+            bindings = <
+        //                          -------------------------------------------------------------------------------------------------
+        //                          | PF13  | PF14  | PF15  | PF16  | PF17  | PF18  | PF19  | PF20  | PF21  | PF22  | PF23  | PF24  |
+                                     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+    
+        //                          | PF1   | PF2   | PF3   | PF4   | PF5   | PF6   | PF7   | PF8   | PF9   | PF10  | PF11  | PF12  |
+                                     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+    
+        //  -------------------------------------------------------------------------------------------------------------------------------------------------
+        //  | Attn  | Clear |       |  `    |  1    |  2    |  3    |  4    |  5    |  6    |  7    |  8    |  9    |  0    |  -    |  =    |   BKSP        |       |INSERT | HOME  |PAGE_UP|           | BL_NUM     | KP_SLASH   | STAR       | KP_MINUS   |
+             &trans  &trans          &trans  &trans  &trans &trans &trans &trans &trans &kp KP_N7 &kp KP_N8 &kp KP_N9 &trans &kp KP_MINUS &kp KP_PLUS &trans         &trans   &trans &trans              &trans       &trans       &trans       &trans
+    
+        //  | Blank | ErImp |       |    TAB    |  Q    |  W    |  E    |  R    |  T    |  Y    |  U    |  I    |  O    |  P    |   [   |   ]   |           |       |DELETE | END   |PAGE_DW            | KP_N7      | KP_N8      | KP_N9      | KP_PLUS    |
+             &trans &trans           &trans      &trans  &trans  &trans  &trans  &trans&trans&kp KP_N4 &kp KP_N5 &kp KP_N6 &trans&trans  &trans                      &trans   &trans &trans              &trans       &trans       &trans       &trans
+    
+        //  | ExSel | ErEOF |       | CAPS        |   A   |   S   |   D   |   F   |   G   |   H   |   J   |   K   |   L   |   ;   |   '   | Iso \ |  ENTER  |               |  UP   |                   | KP N4      | KP N5      | KP N6      | M122 -     |
+             &trans &trans           &trans       &trans &trans &trans &trans &trans &trans &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_ASTERISK &trans &trans &trans               &trans                      &trans       &trans       &trans       &trans
+    
+        //  | Print |  Test |       | LSHIFT  |   <>  |   Z   |   X   |   C   |   V   |   B   |   N   |   M   |   ,   |   .   |   /   |        RSHIFT       |       | LEFT  | Blank | RIGHT |           | KP N1      | KP N2      | KP N3      | K ENT      |
+             &trans  &trans          &trans    &trans  &trans  &trans &trans &trans &trans &trans    &kp KP_N0 &trans &kp KP_DOT &kp KP_SLASH    &trans              &trans  &trans  &trans              &trans       &trans       &trans       &trans
+    
+        //  |  ??   |  ??   |       |   Reset   |       |    ALT    |                        SPACE                          |    ALT    |       |   Enter   |               | DOWN  |                   |     KP 0                | KP .       |            |
+             &trans &trans           &trans                &trans                            &trans                             &trans              &trans                    &trans                     &trans                    &trans                               
+        //  -------------------------------------------------------------------------------------------------------------------------------------------------
+            >;
+        };
+        
+        extra1 {
+            status = "reserved";
+        };
+
+        extra2 {
+            status = "reserved";
+        };
+    };
+
+};
+
+
+

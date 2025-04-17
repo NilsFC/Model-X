@@ -21,7 +21,7 @@ The "X" in Model X stands for "Cross keyboard," as it aims to be compatible with
 - **BLE (Bluetooth Low Energy)** and **USB Type-C Connection**
 - **USB-C Charging** (same cable as most smartphones, notebooks, and laptops)
 - **Low Power Consumption**: A 2000 mAh battery lasts over a month without recharging or turning off.
-- **Compatibility**: Works with IBM Model M (139140X), IBM Model M122 Type 2/3 (AKA Battleship) and 84 keys SSK.
+- **Compatibility**: Works with IBM Model M (139140X), IBM Model M122 Type 2/3 (AKA Battleship) and 84/85 keys SSK.
 - **Broad Support**: Compatible with all Model M FFC variants and LED connectors.
 - **ZMK Firmware** (open source)
 - **Software Remappable Keys** via ZMK Studio User Interface

@@ -1,0 +1,10 @@
+if SHIELD_MODEL_X
+
+config ZMK_KEYBOARD_NAME
+    default "Model X"
+
+config SPI
+    default y
+
+endif
+

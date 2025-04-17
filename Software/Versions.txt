@@ -14,3 +14,6 @@ Compiled without USB-Logging snippet, to avoid to see 2 USBs when opening ZMK St
 
 ZMK-Model_X_v20.ufs (20250410)
 Added SSK 85 Keys ISO Layout;
+
+ZMK-Model_X_v21.ufs (20250417)
+Added Antighosting;
