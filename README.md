@@ -4,7 +4,7 @@
 
 Project wiki: https://github.com/NilsFC/Model-X/wiki
 
-![Model X](<./Pics/Resources/Model%20X%20CTRL%20(Int.Batt.SW)_16b.png>)
+![Model X](<./Pics/Resources/Model%20X%20CTRL%20v0.3%20(Int.Batt.SW)_16b.png>)
 
 Model X is a direct replacement controller for the classic IBM Model M keyboards.<br>
 Old mechanical keyboards are making a comeback among enthusiasts and programmers and gaining value.<br>
