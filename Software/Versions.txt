@@ -16,4 +16,11 @@ ZMK-Model_X_v20.ufs (20250410)
 Added SSK 85 Keys ISO Layout;
 
 ZMK-Model_X_v21.ufs (20250417)
-Added Antighosting;
+Added Antighosting basic;
+
+ZMK-Model_X_v23.ufs (20250719)
+Advanced Antighosting;
+Augmented compatibility with Mac;
+Changed usb name/ bt broadcasting from "Model X" to "IBM Model M";
+Note: For this last point, if upgrading from previous version, a settings reset have to be done with "Setting_reset.uf2"
+After that it will be possible to put in upgradie mode the board uniquely with the reset button on pcb;
