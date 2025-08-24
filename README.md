@@ -36,8 +36,8 @@ The "X" in Model X stands for "Cross keyboard," as it aims to be compatible with
 
 ### **Quick reference guide**
 [Quick Reference Guide ENGLISH](./Documents/ModelX%20-%20Quick%20Reference%20Guide%20v20250822%20(ENG).pdf)<br>
-[Quick Reference Guide ITALIANO](./Documents/ModelX%20-%20Quick%20Reference%20Guide%20v20250822%20(ENG).pdf)<br>
-[Quick Reference Guide ESPANOL](./Documents/ModelX%20-%20Quick%20Reference%20Guide%20v20250822%20(ENG).pdf)<br>
+[Quick Reference Guide ITALIANO](./Documents/ModelX%20-%20Quick%20Reference%20Guide%20v20250822%20(ITA).pdf)<br>
+[Quick Reference Guide ESPANOL](./Documents/ModelX%20-%20Quick%20Reference%20Guide%20v20250822%20(ESP).pdf)<br>
 
 ### **Installation**
 
